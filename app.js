@@ -30,3 +30,11 @@ mongoose.connect(config.getDbConnectionString(), {useNewUrlParser: true}).then((
 
 const setupController = require('./controller/setupController');
 setupController(app);
+const apiController = require('./controllers/apiController'); // give it path
+apiController(app);
+
+
+
+
+
+})                 //if i get a get see if it matces this route, and returns the matches
